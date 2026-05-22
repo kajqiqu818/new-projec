@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doraemon RPG FINAL</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<canvas id="game"></canvas>
+
+<div id="ui">
+    <div id="dialogBox">
+        <div id="name"></div>
+        <div id="text"></div>
+        <button id="next">Tiếp</button>
+    </div>
+
+    <div id="inventory"></div>
+
+    <div id="controls">
+        <button ontouchstart="press('up')" ontouchend="release()">↑</button>
+        <button ontouchstart="press('left')" ontouchend="release()">←</button>
+        <button ontouchstart="press('down')" ontouchend="release()">↓</button>
+        <button ontouchstart="press('right')" ontouchend="release()">→</button>
+    </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
